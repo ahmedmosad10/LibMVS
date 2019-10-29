@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibMVP.Views.Forms
 {
-    public partial class frm_BookPlace : Form
+    public partial class frm_DarNashr : Form
     {
-        public frm_BookPlace()
+        public frm_DarNashr()
         {
             InitializeComponent();
         }

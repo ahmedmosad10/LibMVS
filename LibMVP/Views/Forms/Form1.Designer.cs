@@ -247,6 +247,7 @@
             this.barButtonItem4.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barButtonItem4.Name = "barButtonItem4";
             this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // barButtonItem5
             // 
@@ -289,6 +290,7 @@
             this.barButtonItem6.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barButtonItem6.Name = "barButtonItem6";
             this.barButtonItem6.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
             // barButtonItem7
             // 
@@ -549,6 +551,7 @@
             // 
             // tileItem1
             // 
+            this.tileItem1.CurrentFrameIndex = 1;
             tileItemElement1.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement1.Image")));
             tileItemElement1.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement1.Text = "صلاحيات المستخدمين";
@@ -602,6 +605,7 @@
             // 
             // tileItem2
             // 
+            this.tileItem2.CurrentFrameIndex = 1;
             tileItemElement5.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement5.Image")));
             tileItemElement5.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement5.Text = "حسابات الموردين";
@@ -655,6 +659,7 @@
             // 
             // tileItem3
             // 
+            this.tileItem3.CurrentFrameIndex = 1;
             tileItemElement9.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement9.Image")));
             tileItemElement9.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement9.Text = "اضافة المنتجات";
@@ -701,6 +706,7 @@
             // 
             // tileItem4
             // 
+            this.tileItem4.CurrentFrameIndex = 1;
             tileItemElement13.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement13.Image")));
             tileItemElement13.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement13.Text = "حسابات المستعرين";
@@ -746,6 +752,7 @@
             // 
             // tileItem5
             // 
+            this.tileItem5.CurrentFrameIndex = 1;
             tileItemElement17.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement17.Image")));
             tileItemElement17.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement17.Text = "اداةر المشتريات";
@@ -799,6 +806,7 @@
             // 
             // tileItem6
             // 
+            this.tileItem6.CurrentFrameIndex = 1;
             tileItemElement21.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement21.Image")));
             tileItemElement21.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement21.Text = "اداة المبيعات";
@@ -860,6 +868,7 @@
             // 
             // tileItem7
             // 
+            this.tileItem7.CurrentFrameIndex = 1;
             tileItemElement25.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement25.Image")));
             tileItemElement25.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement25.Text = "رصيد الخزنة";
@@ -913,6 +922,7 @@
             // 
             // tileItem8
             // 
+            this.tileItem8.CurrentFrameIndex = 1;
             tileItemElement29.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement29.Image")));
             tileItemElement29.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement29.Text = "حد الطلب من المنتجات";
@@ -966,6 +976,7 @@
             // 
             // tileItem9
             // 
+            this.tileItem9.CurrentFrameIndex = 1;
             tileItemElement33.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement33.Image")));
             tileItemElement33.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement33.Text = "مرتجعات";
@@ -1019,6 +1030,7 @@
             // 
             // tileItem10
             // 
+            this.tileItem10.CurrentFrameIndex = 1;
             tileItemElement37.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement37.Image")));
             tileItemElement37.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopCenter;
             tileItemElement37.Text = "تقرير ارباح المبيعات";

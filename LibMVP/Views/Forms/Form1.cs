@@ -42,5 +42,29 @@ namespace LibMVP
                
            // }
         }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Application.OpenForms["frm_BookPlace"] != null)
+            {
+                //you can use closing or hiding Method
+                Application.OpenForms["frm_BookPlace"].Close();
+                // Application.OpenForms["My_Form_Name"].Hide();
+            }
+            Views.Forms.frm_BookPlace frm = new Views.Forms.frm_BookPlace();
+            frm.ShowDialog();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Application.OpenForms["frm_Contry"] != null)
+            {
+                //you can use closing or hiding Method
+                Application.OpenForms["frm_Contry"].Close();
+                // Application.OpenForms["My_Form_Name"].Hide();
+            }
+            Views.Forms.frm_Contry frm = new Views.Forms.frm_Contry();
+            frm.ShowDialog();
+        }
     }
 }

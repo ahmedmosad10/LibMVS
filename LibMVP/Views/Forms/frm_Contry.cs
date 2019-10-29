@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LibMVP.Views.Forms
 {
-    public partial class frm_BookPlace : Form
+    public partial class frm_Contry : Form
     {
-        public frm_BookPlace()
+        public frm_Contry()
         {
             InitializeComponent();
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
