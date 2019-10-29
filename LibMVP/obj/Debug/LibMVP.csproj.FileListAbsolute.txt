@@ -1,0 +1,11 @@
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\bin\Debug\LibMVP.exe
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\bin\Debug\LibMVP.pdb
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.Form1.resources
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.Properties.Resources.resources
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.csproj.GenerateResource.Cache
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.exe.licenses
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.exe
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.pdb
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.Views.Forms.frm_Category.resources
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.csprojResolveAssemblyReference.cache
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.Views.Forms.frm_Category1.resources
