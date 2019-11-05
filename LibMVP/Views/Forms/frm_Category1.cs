@@ -16,6 +16,12 @@ namespace LibMVP.Views.Forms
         public frm_Category1()
         {
             InitializeComponent();
+            
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

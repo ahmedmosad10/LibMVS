@@ -128,6 +128,7 @@
             this.btnAdd.Size = new System.Drawing.Size(80, 42);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "حفظ";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // groupBox3
             // 

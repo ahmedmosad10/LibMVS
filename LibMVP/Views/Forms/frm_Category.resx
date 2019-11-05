@@ -245,7 +245,7 @@
         jIU7fRt2m+xV02Px1QG7fwHTYvHPg9bVVgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnSave.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnEdit.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAb4SURBVFhHtZYLUFNnGobp7OylszM7rbhepnaYxcF2V9HWK/VSi2wdim6rHa2WRRe7Yq9rd6ps
@@ -327,7 +327,7 @@
         P9pZ9rhbpMOtAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnAdd.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSave.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAVaSURBVFhHpdZ7TNNXFAdwzbJX9t+SLVl006Ayp/MRxhCf6JzMqZuKOhGrK1PUbC4a2SNRmDwE

@@ -52,6 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\Presenter\CatgoryPresenter.cs" />
+    <Compile Include="Logic\Presenter\tryOne.cs" />
+    <Compile Include="Logic\Servcies\CatgoryService.cs" />
+    <Compile Include="Logic\Servcies\DBHelper.cs" />
+    <Compile Include="Models\CatgoryModel.cs" />
     <Compile Include="Views\Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +65,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Forms\frm_Auther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frm_Auther.Designer.cs">
+      <DependentUpon>frm_Auther.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Forms\frm_BookPlace.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +89,19 @@
     <Compile Include="Views\Forms\frm_Category1.Designer.cs">
       <DependentUpon>frm_Category1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Forms\frm_Contry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frm_Contry.Designer.cs">
+      <DependentUpon>frm_Contry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\frm_DarNashr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frm_DarNashr.Designer.cs">
+      <DependentUpon>frm_DarNashr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InterFace\Icatgory.cs" />
     <EmbeddedResource Include="Views\Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +115,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Forms\frm_Auther.resx">
+      <DependentUpon>frm_Auther.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\frm_BookPlace.resx">
       <DependentUpon>frm_BookPlace.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +127,13 @@
     <EmbeddedResource Include="Views\Forms\frm_Category1.resx">
       <DependentUpon>frm_Category1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frm_Contry.resx">
+      <DependentUpon>frm_Contry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frm_DarNashr.resx">
+      <DependentUpon>frm_DarNashr.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -110,10 +144,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Logic\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="img\book-icon-138-Windows.ico" />
     <Content Include="img\book-icon-138.png" />
