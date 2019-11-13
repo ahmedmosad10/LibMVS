@@ -52,15 +52,13 @@
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnNew = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.dgvStore1 = new System.Windows.Forms.DataGridView();
+            this.dgvContry = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStore1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContry)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,6 +153,7 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(42, 33);
             this.btnClose.TabIndex = 1;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // groupBox1
             // 
@@ -238,6 +237,7 @@
             this.btnDelAll.Size = new System.Drawing.Size(104, 42);
             this.btnDelAll.TabIndex = 9;
             this.btnDelAll.Text = "مسح الكل";
+            this.btnDelAll.Click += new System.EventHandler(this.btnDelAll_Click);
             // 
             // btnDel
             // 
@@ -251,6 +251,7 @@
             this.btnDel.Size = new System.Drawing.Size(80, 42);
             this.btnDel.TabIndex = 8;
             this.btnDel.Text = "حذف";
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnEdit
             // 
@@ -264,6 +265,7 @@
             this.btnEdit.Size = new System.Drawing.Size(80, 42);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "تعديل";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnNew
             // 
@@ -277,6 +279,7 @@
             this.btnNew.Size = new System.Drawing.Size(80, 42);
             this.btnNew.TabIndex = 6;
             this.btnNew.Text = "جديد";
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnSave
             // 
@@ -290,16 +293,19 @@
             this.btnSave.Size = new System.Drawing.Size(80, 42);
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "حفظ";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // dgvStore1
+            // dgvContry
             // 
-            this.dgvStore1.AllowUserToAddRows = false;
-            this.dgvStore1.AllowUserToDeleteRows = false;
+            this.dgvContry.AllowUserToAddRows = false;
+            this.dgvContry.AllowUserToDeleteRows = false;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FloralWhite;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvStore1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvStore1.BackgroundColor = System.Drawing.Color.White;
-            this.dgvStore1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvContry.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvContry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvContry.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvContry.BackgroundColor = System.Drawing.Color.White;
+            this.dgvContry.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.CadetBlue;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -307,19 +313,16 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStore1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvStore1.ColumnHeadersHeight = 30;
-            this.dgvStore1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
-            this.dgvStore1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dgvStore1.EnableHeadersVisualStyles = false;
-            this.dgvStore1.GridColor = System.Drawing.Color.White;
-            this.dgvStore1.Location = new System.Drawing.Point(5, 51);
-            this.dgvStore1.MultiSelect = false;
-            this.dgvStore1.Name = "dgvStore1";
-            this.dgvStore1.ReadOnly = true;
-            this.dgvStore1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvContry.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvContry.ColumnHeadersHeight = 30;
+            this.dgvContry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dgvContry.EnableHeadersVisualStyles = false;
+            this.dgvContry.GridColor = System.Drawing.Color.White;
+            this.dgvContry.Location = new System.Drawing.Point(5, 51);
+            this.dgvContry.MultiSelect = false;
+            this.dgvContry.Name = "dgvContry";
+            this.dgvContry.ReadOnly = true;
+            this.dgvContry.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.CadetBlue;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -327,25 +330,25 @@
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStore1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvStore1.RowHeadersVisible = false;
-            this.dgvStore1.RowHeadersWidth = 25;
-            this.dgvStore1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvContry.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvContry.RowHeadersVisible = false;
+            this.dgvContry.RowHeadersWidth = 25;
+            this.dgvContry.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Droid Arabic Kufi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvStore1.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvStore1.RowTemplate.Height = 18;
-            this.dgvStore1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStore1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStore1.Size = new System.Drawing.Size(240, 377);
-            this.dgvStore1.TabIndex = 130;
+            this.dgvContry.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvContry.RowTemplate.Height = 18;
+            this.dgvContry.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvContry.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvContry.Size = new System.Drawing.Size(240, 377);
+            this.dgvContry.TabIndex = 130;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.dgvStore1);
+            this.panel2.Controls.Add(this.dgvContry);
             this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.groupBox1);
@@ -353,19 +356,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(717, 431);
             this.panel2.TabIndex = 5;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "رقم الدولة";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "اسم الدولة";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 137;
             // 
             // frm_Contry
             // 
@@ -378,18 +368,19 @@
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Droid Arabic Kufi", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_Contry";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.frm_Contry_Load);
             this.groupBox2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStore1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContry)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -416,10 +407,8 @@
         private DevExpress.XtraEditors.SimpleButton btnEdit;
         private DevExpress.XtraEditors.SimpleButton btnNew;
         private DevExpress.XtraEditors.SimpleButton btnSave;
-        internal System.Windows.Forms.DataGridView dgvStore1;
+        internal System.Windows.Forms.DataGridView dgvContry;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
 
     }
 }

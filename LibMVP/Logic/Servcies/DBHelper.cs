@@ -48,6 +48,41 @@ namespace LibMVP.Logic.Servcies
                }
            return false;
        }
+       //this mouthed getAll data from table 
+       public static DataTable GetData(string spName, Action methoud)
+       {
+           DataTable tbl = new DataTable();
+           SqlDataAdapter da;
+           using (SqlConnection connection = getConnectionString())
+               try
+               {
+                   command = new SqlCommand(spName, connection);
+                   command.CommandType = CommandType.StoredProcedure;
+
+                   methoud.Invoke();
+                   connection.Open();
+                  // command.ExecuteNonQuery();
+                  // tbl.Load(command.ExecuteReader());
+                    da = new SqlDataAdapter(command);
+                   da.Fill(tbl);
+                   da.Dispose();
+                   connection.Close();
+               }
+               catch (Exception ex)
+               {
+                   connection.Close();
+                   Console.WriteLine(ex.Message);
+
+               }
+               finally
+               {
+                   connection.Close();
+                   
+               }
+           return tbl;
+           
+       }
+
        
     }
 }

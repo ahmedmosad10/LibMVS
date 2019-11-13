@@ -21,40 +21,6 @@ namespace LibMVP.Views.Forms
             InitializeComponent();
             catgoryPresenter = new CatgoryPresenter(this);
         }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            //ID =Convert.ToInt32( txtID.Text);
-            //CatName = txtName.Text;
-          bool check=  catgoryPresenter.CatInsert();
-          if (check==true)
-          {
-              MessageBox.Show("ok");
-          }
-          else
-          {
-              MessageBox.Show("noooooooooooooo");
-
-          }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
         #region Icatgory Members
 
         public int ID
@@ -67,7 +33,7 @@ namespace LibMVP.Views.Forms
             set
             {
                 txtID.Text = value.ToString();
-               // throw new NotImplementedException();
+                // throw new NotImplementedException();
             }
         }
 
@@ -84,5 +50,86 @@ namespace LibMVP.Views.Forms
         }
 
         #endregion
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            //ID =Convert.ToInt32( txtID.Text);
+            //CatName = txtName.Text;
+          bool check=  catgoryPresenter.CatInsert();
+          if (check==true)
+          {
+              MessageBox.Show("تم الاضافة بنجاح");
+          }
+          else
+          {
+              MessageBox.Show("noooooooooooooo");
+
+          }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            bool check = catgoryPresenter.CatUpdata();
+            if (check == true)
+            {
+                MessageBox.Show("تم التعديل بنجاح ");
+            }
+            else
+            {
+                MessageBox.Show("خطأ");
+
+            }
+        }
+
+
+
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            bool check = catgoryPresenter.CatDelete();
+            if (check == true)
+            {
+                MessageBox.Show("تم الحذف بنجاح ");
+            }
+            else
+            {
+                MessageBox.Show("خطأ");
+
+            }
+        }
+
+        private void btnDelAll_Click(object sender, EventArgs e)
+        {
+            bool check = catgoryPresenter.CatDeleteAll();
+            if (check == true)
+            {
+                MessageBox.Show("تم الحذف  الكل بنجاح ");
+            }
+            else
+            {
+                MessageBox.Show("خطأ");
+
+            }
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            catgoryPresenter.ClearFildes();
+        }
+
+
+
+
+
+
+        
+
+       
+
+       
     }
 }

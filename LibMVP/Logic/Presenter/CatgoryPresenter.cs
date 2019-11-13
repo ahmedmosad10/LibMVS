@@ -28,5 +28,27 @@ namespace LibMVP.Logic.Presenter
             return CatgoryService.categoryInsert(catModel.ID, catModel.CatName);
         }
 
+        public bool CatUpdata()
+        {
+            ConnectBettwenModelInterface();
+            return CatgoryService.categoryUpdata(catModel.ID, catModel.CatName);
+        }
+        public bool CatDelete()
+        {
+            ConnectBettwenModelInterface();
+            return CatgoryService.categoryDelete(catModel.ID);
+        }
+        public bool CatDeleteAll()
+        {
+            ConnectBettwenModelInterface();
+            return CatgoryService.categoryDeleteAll();
+        }
+        public void ClearFildes()
+        {
+            ConnectBettwenModelInterface();
+            icatgory.ID = 0;
+            icatgory.CatName = "";
+        }
+
     }
 }

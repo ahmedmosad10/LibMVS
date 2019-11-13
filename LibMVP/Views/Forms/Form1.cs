@@ -78,5 +78,17 @@ namespace LibMVP
             Views.Forms.frm_Auther frm = new Views.Forms.frm_Auther();
             frm.ShowDialog();
         }
+
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Application.OpenForms["frm_ook"] != null)
+            {
+                //you can use closing or hiding Method
+                Application.OpenForms["frm_ook"].Close();
+                // Application.OpenForms["My_Form_Name"].Hide();
+            }
+            Views.Forms.frm_ook frm = new Views.Forms.frm_ook();
+            frm.ShowDialog();
+        }
     }
 }

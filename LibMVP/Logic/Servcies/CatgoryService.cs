@@ -44,10 +44,22 @@ namespace LibMVP.Logic.Servcies
         private static void catgoryParmaterUpdata(int id, string name, SqlCommand command)
         {
             command.Parameters.Add("@id", SqlDbType.Int).Value = id;
-            command.Parameters.Add("@id", SqlDbType.NVarChar).Value = name;
+            command.Parameters.Add("@name", SqlDbType.NVarChar).Value = name;
+        }
 
+        //this mouthed Delete all in table catogry
+        public static bool categoryDeleteAll()
+        {
+            return DBHelper.excuteData("categoryDeleteAll", () => catgoryParmaterDeleteAll());
 
         }
+        //this mouthed  give Parmater to use to Delete all in table catogry
+
+        private static void catgoryParmaterDeleteAll()
+        {
+            //command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+        }
+
 
     }
 }

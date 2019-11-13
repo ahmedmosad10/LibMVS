@@ -53,10 +53,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Logic\Presenter\CatgoryPresenter.cs" />
+    <Compile Include="Logic\Presenter\CountryPresenter.cs" />
+    <Compile Include="Logic\Presenter\ookPresenter.cs" />
     <Compile Include="Logic\Presenter\tryOne.cs" />
     <Compile Include="Logic\Servcies\CatgoryService.cs" />
+    <Compile Include="Logic\Servcies\CountyService.cs" />
     <Compile Include="Logic\Servcies\DBHelper.cs" />
+    <Compile Include="Logic\Servcies\ookService.cs" />
     <Compile Include="Models\CatgoryModel.cs" />
+    <Compile Include="Models\CountyModel.cs" />
+    <Compile Include="Models\ookModel.cs" />
     <Compile Include="Views\Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,7 +107,15 @@
     <Compile Include="Views\Forms\frm_DarNashr.Designer.cs">
       <DependentUpon>frm_DarNashr.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Forms\frm_ook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\frm_ook.Designer.cs">
+      <DependentUpon>frm_ook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\InterFace\Icatgory.cs" />
+    <Compile Include="Views\InterFace\Icounty.cs" />
+    <Compile Include="Views\InterFace\Iook.cs" />
     <EmbeddedResource Include="Views\Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\Forms\frm_Auther.resx">
       <DependentUpon>frm_Auther.cs</DependentUpon>
@@ -133,6 +148,9 @@
     <EmbeddedResource Include="Views\Forms\frm_DarNashr.resx">
       <DependentUpon>frm_DarNashr.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\frm_ook.resx">
+      <DependentUpon>frm_ook.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -148,6 +166,7 @@
   <ItemGroup>
     <Content Include="img\book-icon-138-Windows.ico" />
     <Content Include="img\book-icon-138.png" />
+    <None Include="img\no-image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

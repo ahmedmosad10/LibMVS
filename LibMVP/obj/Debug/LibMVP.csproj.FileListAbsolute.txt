@@ -7,6 +7,7 @@ I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.Views.Forms.frm_Category.r
 I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.Views.Forms.frm_Category1.resources
 I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.Views.Forms.frm_Contry.resources
 I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.Views.Forms.frm_DarNashr.resources
+I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.Views.Forms.frm_ook.resources
 I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.csproj.GenerateResource.Cache
 I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.exe.licenses
 I:\2019\LibAppCsharp\LibMVPSl\LibMVP\obj\Debug\LibMVP.pdb
